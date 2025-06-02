@@ -29,7 +29,9 @@ export default function RootLayout({
       >
       <div className="flex flex-col min-h-screen font-[family-name:var(--font-geist-sans)] text-center">
           <header className="fixed top-0 left-0 w-full p-4 bg-gray-800 text-white flex justify-between items-center z-50">
+              <a href="/" className="hover:underline">
               <h1 className="text-xl font-bold">Mi Sitio</h1>
+              </a>
               <nav className="space-x-4">
                   <a href="/" className="hover:underline">Inicio</a>
                   <a href="/no_page" className="hover:underline">Sobre mi</a>
