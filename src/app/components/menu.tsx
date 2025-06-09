@@ -33,7 +33,7 @@ export default function DropdownMenu() {
                     <Link href="/about_me" className="block px-4 py-2 hover:bg-blue-600">Sobre mi</Link>
                     <Link href="/no_page" className="block px-4 py-2 hover:bg-blue-600">Proyectos</Link>
                     <Link href="/no_page" className="block px-4 py-2 hover:bg-blue-600">Sociales</Link>
-                    <Link href="/no_page" className="block px-4 py-2 hover:bg-blue-600">Contacto</Link>
+                    <Link href="/contact" className="block px-4 py-2 hover:bg-blue-600">Contacto</Link>
                 </div>
             )}
         </div>
