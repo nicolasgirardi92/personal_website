@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
+import DropdownMenu from "@/app/components/menu";
+import Clock from "@/app/components/clock";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -34,20 +36,22 @@ export default function RootLayout({
               <h1 className="text-xl font-bold">Mi Sitio</h1>
               </Link>
               <nav className="space-x-4">
-                  <Link href="/" className="hover:underline">Inicio</Link>
-                  <Link href="/no_page" className="hover:underline">Sobre mi</Link>
-                  <Link href="/no_page" className="hover:underline">Formación</Link>
-                  <Link href="/no_page" className="hover:underline">Proyectos</Link>
-                  <Link href="/no_page" className="hover:underline">Sociales</Link>
-                  <Link href="/no_page" className="hover:underline">Contacto</Link>
+
+                  <DropdownMenu />
               </nav>
           </header>
 
           <main className="flex-grow flex items-center justify-center w-full px-4">
-              <div className="w-full flex items-center justify-center">
+              <div className="w-full max-w-5xl mx-auto mt-24 text-left">
                   {children}
               </div>
           </main>
+          <footer className="fixed bottom-0 left-0 w-full p-4 bg-gray-800 text-white flex justify-between items-center z-50">
+              <p className="text-sm">{new Date().getFullYear()} Mi Sitio</p>
+              <div className="space-x-4">
+                  <Clock/>
+              </div>
+          </footer>
       </div>
       </body>
     </html>
