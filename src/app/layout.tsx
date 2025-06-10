@@ -4,6 +4,7 @@ import "./globals.css";
 import Link from "next/link";
 import DropdownMenu from "@/app/components/menu";
 import Clock from "@/app/components/clock";
+import Version from "@/app/components/version";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -33,7 +34,7 @@ export default function RootLayout({
       <div className="flex flex-col min-h-screen font-[family-name:var(--font-geist-sans)] text-center">
           <header className="fixed top-0 left-0 w-full p-4 bg-gray-800 text-white flex justify-between items-center z-50">
               <Link href="/" className="hover:underline">
-              <h1 className="text-xl font-bold">Mi Sitio</h1>
+              <h1 className="text-xl font-bold">NG - Mi Sitio Web</h1>
               </Link>
               <nav className="space-x-4">
 
@@ -47,10 +48,13 @@ export default function RootLayout({
               </div>
           </main>
           <footer className="fixed bottom-0 left-0 w-full p-4 bg-gray-800 text-white flex justify-between items-center z-50">
-              <p className="text-sm">{new Date().getFullYear()} Mi Sitio</p>
-              <div className="space-x-4">
-                  <Clock/>
+              <p className="text-sm">{new Date().getFullYear()} NG</p>
+
+              <div className="absolute left-1/2 transform -translate-x-1/2">
+                  <Version />
               </div>
+
+              <Clock />
           </footer>
       </div>
       </body>

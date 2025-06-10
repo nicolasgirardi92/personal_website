@@ -3,3 +3,7 @@ export type EmailForm = {
     subject: string;
     message: string;
 }
+
+export type VersionResponse = {
+    version: string;
+};
