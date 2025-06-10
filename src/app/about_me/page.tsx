@@ -6,7 +6,7 @@ export default function AboutMe() {
     return(
         <div className="px-6 max-w-5xl mx-auto mt-10">
             <DropDownSection title="Información personal">
-                <p>Mi Nombre es Nicolás Manuel Girard, tengo 33 años, nací y vivo en la ciudad de Buenos Aires, Argentina</p>
+                <p>Mi Nombre es Nicolás Manuel Girardi, tengo 33 años, nací y vivo en la ciudad de Buenos Aires, Argentina</p>
             </DropDownSection>
             <DropDownSection title="Formación">
                 <p>Hice el secundario en el colegio Santa Catalina, con orientación en administración de empresa (2005-2009)</p>
